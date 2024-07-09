@@ -22,8 +22,8 @@ public class GooglePageTestChrome {
 	WebDriver driver;
 	Properties prop;
 
+	@Parameters({"browser"})
 	@BeforeMethod
-	@Parameters("browser")
 	public void setUp(String browser) {
 
 		prop = new Properties();
@@ -49,6 +49,7 @@ public class GooglePageTestChrome {
 	}
 
 	@Test
+//	@Parameters("url")
 	public void googlePageTesting() {
 
 		try {
